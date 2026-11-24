@@ -19,16 +19,16 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       background-color: var(--bg);
       color: var(--text);
-      line-height: 1.7;
+      line-height: 1.75;
       margin: 0;
       padding: 24px 16px;
     }
     .container {
-      max-width: 860px;
+      max-width: 900px;
       margin: 0 auto;
       background: var(--card);
       border: 1px solid var(--border);
-      padding: 28px;
+      padding: 32px;
       border-radius: 16px;
       box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
     }
@@ -44,7 +44,7 @@
       background: #0f172a;
       color: var(--muted);
       border: 1px solid var(--border);
-      padding: 7px 12px;
+      padding: 8px 13px;
       border-radius: 8px;
       font-size: 13px;
       font-weight: 600;
@@ -61,38 +61,56 @@
       border-color: var(--accent);
     }
     h1 {
-      margin: 0 0 8px 0;
-      font-size: 26px;
+      margin: 0 0 10px 0;
+      font-size: 27px;
       color: #fff;
     }
     .meta {
       font-size: 13px;
       color: var(--muted);
-      margin-bottom: 20px;
-      padding: 10px 14px;
-      background: rgba(15, 23, 42, 0.6);
+      margin-bottom: 22px;
+      padding: 12px 16px;
+      background: rgba(15, 23, 42, 0.65);
       border-radius: 10px;
       border: 1px solid var(--border);
     }
     h2 {
       font-size: 17px;
       color: var(--accent);
-      margin: 22px 0 8px 0;
+      margin: 26px 0 10px 0;
+      padding-bottom: 4px;
+      border-bottom: 1px solid rgba(51, 65, 85, 0.6);
     }
     p {
       margin: 0 0 12px 0;
       font-size: 15px;
+    }
+    ul {
+      margin: 0 0 14px 0;
+      padding-inline-start: 22px;
+      font-size: 15px;
+    }
+    li {
+      margin-bottom: 6px;
     }
     a {
       color: var(--accent);
       text-decoration: none;
     }
     a:hover { text-decoration: underline; }
+    .notice {
+      background: rgba(249, 115, 22, 0.08);
+      border-inline-start: 4px solid var(--accent);
+      padding: 12px 16px;
+      border-radius: 8px;
+      margin: 16px 0;
+      font-size: 14px;
+    }
     .lang-section { display: none; }
     .lang-section.active { display: block; }
     .footer {
-      margin-top: 28px;
-      padding-top: 16px;
+      margin-top: 32px;
+      padding-top: 18px;
       border-top: 1px solid var(--border);
       font-size: 12px;
       color: var(--muted);
@@ -117,17 +135,468 @@
       <button type="button" class="lang-btn" data-lang="id" onclick="setLang('id')">ID Bahasa</button>
     </div>
 
-    <!-- TÜRKÇE -->
+    <!-- ==================== TÜRKÇE ==================== -->
     <section id="lang-tr" class="lang-section active" lang="tr" dir="ltr">
-      <h1>TankFlow – Gizlilik Politikası</h1>
-      <div class="meta">Geliştirici: MZF Digital &nbsp;|&nbsp; Paket: com.mzfdigital.tankflow &nbsp;|&nbsp; Yürürlük Tarihi: 24 Kasım 2026</div>
-      <p>MZF Digital olarak gizliliğinize önem veriyoruz. Bu Gizlilik Politikası, TankFlow mobil uygulamasını kullandığınızda verilerinizin nasıl işlendiğini, yerel saklama yapısını ve üçüncü taraf hizmetlerin kapsamını açıklar. Uygulamayı indirerek veya kullanarak bu politikayı kabul etmiş sayılırsınız.</p>
+      <h1>TankFlow – Kapsamlı Gizlilik Politikası</h1>
+      <div class="meta">Geliştirici: MZF Digital &nbsp;|&nbsp; Uygulama Paketi: com.mzfdigital.tankflow &nbsp;|&nbsp; Son Güncelleme ve Yürürlük Tarihi: 24 Kasım 2026</div>
+      <p>MZF Digital olarak kullanıcılarımızın gizliliğine ve kişisel verilerinin korunmasına büyük önem veriyoruz. İşbu Kapsamlı Gizlilik Politikası ("Politika"), TankFlow mobil uygulamasını ("Uygulama") indirdiğinizde, kurduğunuzda veya kullandığınızda hangi verilerin nasıl işlendiğini, verilerin cihazınızda yerel olarak nasıl saklandığını, üçüncü taraf hizmet sağlayıcıların (Google AdMob ve Google Play) veri işleme kapsamını ve geliştiricinin yasal sorumluluk sınırlarını açık ve şeffaf bir biçimde düzenler.</p>
+      <div class="notice"><strong>Önemli Bildirim:</strong> Uygulamayı indirerek, cihazınıza kurarak veya kullanarak işbu Gizlilik Politikası'nın tüm hükümlerini okuduğunuzu, anladığınızı ve kabul ettiğinizi beyan etmiş sayılırsınız. Bu şartları kabul etmiyorsanız lütfen Uygulamayı kullanmayınız ve cihazınızdan derhal kaldırınız.</div>
 
-      <h2>1. Kişisel Veri Toplamama ve Yerel Saklama</h2>
-      <p>TankFlow uygulaması üyelik gerektirmez ve kişisel kimlik bilgilerinizi (ad, soyad, telefon, adres, konum vb.) toplamaz. Uygulamaya girdiğiniz araç bilgileri, yakıt/şarj kayıtları, kilometre verileri ve fiş fotoğrafları yalnızca cihazınızın yerel hafızasında saklanır; MZF Digital sunucularına aktarılmaz, yedeklenmez veya üçüncü kişilerle paylaşılmaz.</p>
+      <h2>1. Geliştirici Bilgileri ve Politikanın Kapsamı</h2>
+      <p>Bu Politika yalnızca MZF Digital tarafından geliştirilen ve <code>com.mzfdigital.tankflow</code> paket adıyla Google Play Store üzerinden sunulan TankFlow mobil uygulaması için geçerlidir. Uygulama içerisinde yer alabilecek üçüncü taraf reklamları, dış bağlantılar veya mağaza platformları kendi gizlilik politikalarına tabidir ve bu Politikanın kapsamı dışındadır.</p>
 
-      <h2>2. Cihaz İzinleri</h2>
-      <p>Uygulama yalnızca kullanıcı talebi doğrultusunda fiş fotoğrafı çekmek/eklemek için kamera veya galeri izni, JSON/CSV/PDF raporlarını dışa veya içe aktarmak için yerel dosya erişimi kullanabilir. Bu dosyalar cihaz dışına otomatik olarak gönderilmez.</p>
+      <h2>2. Kişisel Veri Toplamama İlkesi ve Yerel Depolama (Local-First) Mimarisi</h2>
+      <p>TankFlow, kullanıcı kaydı, üyelik oluşturma, oturum açma veya bulut senkronizasyonu gerektirmez. MZF Digital, Uygulama aracılığıyla aşağıdaki kişisel verileri <strong>kesinlikle toplamaz, istemez, sunucularına aktarmaz ve saklamaz</strong>:</p>
+      <ul>
+        <li>Ad, soyad, T.C. kimlik numarası, doğum tarihi veya pasaport bilgileri,</li>
+        <li>Telefon numarası, ev/iş adresi, rehber kayıtları veya SMS içerikleri,</li>
+        <li>Gerçek zamanlı veya geçmiş hassas GPS konum verileri,</li>
+        <li>Kredi kartı, banka hesabı, IBAN veya finansal ödeme bilgileri,</li>
+        <li>Biyometrik veriler, sağlık verileri veya özel nitelikli kişisel veriler.</li>
+      </ul>
+      <p>Uygulamaya kendi iradenizle girdiğiniz tüm veriler (araç profilleri, marka/model, plaka veya takma ad, kilometre sayacı kayıtları, yakıt/elektrik şarj miktarları, birim fiyatlar, harcama tutarları, istasyon notları ve eklediğiniz fiş fotoğrafları) yalnızca ve münhasıran <strong>kendi cihazınızın yerel depolama alanında (SQLite / yerel dosya sistemi)</strong> tutulur. MZF Digital'in bu verilere uzaktan erişimi yoktur.</p>
 
-      <h2>3. Üçüncü Taraf Reklamlar (Google AdMob)</h2>
-      <p>TankFlow'un ücretsiz sürümü Google AdMob (Banner, Native ve Ödüllü reklamlar)
+      <h2>3. Cihaz İzinleri ve Kullanım Amaçları</h2>
+      <p>Uygulama yalnızca asgari işlevsellik için gerekli izinleri ve yalnızca sizin açık işleminizle kullanır:</p>
+      <ul>
+        <li><strong>Kamera ve Galeri / Medya Erişimi:</strong> Yalnızca bir yakıt/şarj kaydına kendi isteğinizle fiş fotoğrafı çekmek veya galeriden seçmek istediğinizde kullanılır. Çekilen veya seçilen görseller yalnızca cihazınızın yerel uygulama alanında saklanır, dış sunuculara yüklenmez.</li>
+        <li><strong>Yerel Dosya ve Depolama Erişimi:</strong> Yalnızca sizin talebinizle JSON yedek dosyalarını içe/dışa aktarmak ve PDF/CSV raporları oluşturup paylaşmak için kullanılır.</li>
+        <li><strong>İnternet ve Ağ Erişimi:</strong> Ücretsiz sürümde Google AdMob reklamlarının yüklenmesi, Google Play Billing üzerinden TankFlow Pro aboneliklerinin doğrulanması ve Gizlilik Politikası/Hizmet Şartları gibi yasal sayfaların açılması amacıyla kullanılır.</li>
+      </ul>
+
+      <h2>4. Üçüncü Taraf Reklam Hizmetleri (Google AdMob)</h2>
+      <p>TankFlow'un ücretsiz sürümü; Banner, Native (Yerel) ve isteğe bağlı Ödüllü (Rewarded) reklam formatlarını sunmak için Google LLC tarafından sağlanan <strong>Google AdMob</strong> hizmetini kullanır. Google AdMob ve iş ortakları; reklam gösterimi, reklam sıklığı sınırlaması, performans ölçümü, dolandırıcılık ve geçersiz tıklama tespiti amacıyla aşağıdaki teknik verileri otomatik olarak toplayabilir ve işleyebilir:</p>
+      <ul>
+        <li>Android Reklam Kimliği (Google Advertising ID) ve uygulama etkileşim sinyalleri,</li>
+        <li>IP adresi (yaklaşık konum tahmini ve reklam uygunluğu için),</li>
+        <li>Cihaz modeli, işletim sistemi sürümü, ekran boyutu, dil ayarları ve çökme/performans tanı verileri.</li>
+      </ul>
+      <p>Kişiselleştirilmiş reklam tercihlerinizi dilediğiniz zaman cihazınızın <em>Ayarlar &gt; Google &gt; Reklamlar</em> menüsünden sıfırlayabilir veya kapatabilirsiniz. Google'ın verileri nasıl işlediğine dair güncel bilgi için: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik Politikası</a> ve <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Reklam Teknolojileri</a>.</p>
+      <p><strong>Sorumluluk Reddi:</strong> MZF Digital, Google AdMob veya üçüncü taraf reklam sağlayıcıların veri toplama yöntemleri, çerez/SDK politikaları, reklam içerikleri ya da reklam linklerine tıklandığında yönlendirilen harici web siteleri ve uygulamalar üzerinde hiçbir kontrol sahibi değildir ve bunlardan doğabilecek hiçbir zarardan sorumlu tutulamaz.</p>
+
+      <h2>5. Uygulama İçi Satın Almalar ve Abonelikler (Google Play Billing)</h2>
+      <p>Uygulamada sunulan isteğe bağlı aylık veya yıllık <strong>TankFlow Pro</strong> abonelikleri (tüm reklamların kaldırılması ve reklamsız rapor dışa aktarma) tamamen Google LLC'nin <strong>Google Play Faturalandırma (Google Play Billing)</strong> altyapısı üzerinden gerçekleştirilir. Ödeme işlemleri, faturalandırma, otomatik yenileme, abonelik iptali ve iade süreçleri münhasıran Google Play tarafından yürütülür. MZF Digital hiçbir ödeme bilginize erişmez, kart bilgilerinizi görmez ve saklamaz; yalnızca Google Play'den dönen anonim abonelik aktiflik durumunu cihazınızda yerel olarak önbelleğe alır.</p>
+
+      <h2>6. Veri Yedekleme, Dışa Aktarma ve Veri Kaybı Sorumluluğu</h2>
+      <p>Uygulama verileri bulutta tutulmadığından, verilerinizi düzenli olarak Uygulamadaki <strong>JSON Dışa Aktar</strong> özelliğiyle yedeklemek tamamen kullanıcının kendi sorumluluğundadır. Dışa aktardığınız JSON, CSV ve PDF dosyalarını üçüncü kişilerle veya bulut servisleriyle paylaştığınızda bu dosyaların güvenliği sizin sorumluluğunuzdadır. Uygulamanın silinmesi, cihaz arızası, işletim sistemi güncellemesi, cihazın kaybolması, çalınması veya fabrika ayarlarına sıfırlanması nedeniyle meydana gelen veri kayıplarından MZF Digital kesinlikle sorumlu değildir ve kaybolan yerel veriler teknik olarak kurtarılamaz.</p>
+
+      <h2>7. Hesaplama Doğruluğu, LPG Güvenliği ve Sürüş Güvenliği Bildirimi</h2>
+      <p>TankFlow'da yer alan yakıt tüketimi (L/100km, kWh/100km), kilometre başı maliyet, tahmini menzil, karma maliyet hesaplamaları ve LPG %80 güvenlik sınırı bilgilendirmeleri yalnızca kullanıcının girdiği verilere dayalı matematiksel tahminlerdir. Uygulama kesinlikle aracınızın göstergelerinin veya üretici kılavuzunun yerine geçmez; dışa aktarılan PDF/CSV raporları resmi fatura, muhasebe belgesi veya hukuki delil niteliği taşımaz. Uygulama araç hareket halindeyken kesinlikle kullanılmamalıdır. Trafik cezaları, kazalar, yakıt bitmesi veya araç arızalarından MZF Digital hiçbir şekilde sorumlu tutulamaz.</p>
+
+      <h2>8. Veri Güvenliği, Saklama Süresi ve Silme (İmha) Hakkı</h2>
+      <p>Yerel verileriniz, siz onları silene veya Uygulamayı cihazınızdan kaldırana kadar cihazınızda kalır. Cihazınızın fiziksel ve dijital güvenliğini sağlamak (ekran kilidi, şifreleme, zararlı yazılımlardan korunma) kullanıcının sorumluluğundadır. Verilerinizi dilediğiniz an uygulama içinden tek tek veya toplu olarak silebilir ya da Uygulamayı cihazınızdan kaldırarak tüm yerel veritabanı ve fiş fotoğraflarını kalıcı olarak imha edebilirsiniz.</p>
+
+      <h2>9. Uluslararası Veri Aktarımı ve Bölgesel Haklar (KVKK, GDPR, CCPA)</h2>
+      <p>MZF Digital doğrudan kişisel veri toplamadığı için kendi sunucularına yurt içi veya yurt dışı herhangi bir kişisel veri aktarımı yapmaz. Ancak ücretsiz sürümde kullanılan Google AdMob ve aboneliklerde kullanılan Google Play hizmetleri, kendi global sunucuları üzerinden uluslararası veri aktarımı gerçekleştirebilir. 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK), Avrupa Birliği Genel Veri Koruma Tüzüğü (GDPR) ve Kaliforniya Tüketici Gizliliği Yasası (CCPA/CPRA) kapsamındaki haklarınız çerçevesinde; yerel verileriniz üzerinde tam kontrol sizdedir ve üçüncü taraf reklam/ödeme verilerine ilişkin taleplerinizi doğrudan Google hesap ve gizlilik ayarlarınız üzerinden yönetebilirsiniz.</p>
+
+      <h2>10. Çocukların Gizliliği</h2>
+      <p>TankFlow genel araç sahipleri için tasarlanmış olup 13 yaşın (veya kullanıcının bulunduğu ülkedeki yasal dijital rıza yaşının) altındaki çocuklara yönelik değildir. MZF Digital çocuklardan bilerek herhangi bir kişisel veri toplamaz. Bir çocuğun üçüncü taraf reklam hizmetleri üzerinden veri paylaştığını düşünüyorsanız lütfen bizimle iletişime geçiniz.</p>
+
+      <h2>11. Sorumluluğun Azami Ölçüde Sınırlandırılması ve Mücbir Sebepler</h2>
+      <p>Uygulama "olduğu gibi" (as-is) ve "mevcut haliyle" (as-available) sunulmaktadır. Uygulanabilir hukukun ve emredici tüketici mevzuatının izin verdiği azami ölçüde; MZF Digital, Uygulamanın kullanımından, kullanılamamasından, teknik hatalardan, üçüncü taraf SDK/reklam/mağaza kesintilerinden, cihaz kaynaklı güvenlik açıklarından, veri kaybından veya mücbir sebeplerden doğabilecek doğrudan, dolaylı, arızi, özel, cezai veya sonuçsal hiçbir maddi ya da manevi zarardan sorumlu tutulamaz.</p>
+
+      <h2>12. Politika Değişiklikleri</h2>
+      <p>MZF Digital, yasal gereklilikler, Google Play politikaları veya uygulamadaki yeni özellikler doğrultusunda işbu Gizlilik Politikası'nı önceden bildirimde bulunmaksızın güncelleme hakkını saklı tutar. Güncellenen metin bu sayfada yayınlandığı tarihte yürürlüğe girer; Uygulamayı kullanmaya devam etmeniz güncel politikayı kabul ettiğiniz anlamına gelir.</p>
+
+      <h2>13. Uygulanacak Hukuk, Yetkili Mahkeme ve İletişim</h2>
+      <p>Kullanıcının ikamet ettiği ülkedeki zorunlu tüketici ve veri koruma hükümleri saklı kalmak kaydıyla, işbu Gizlilik Politikası Türkiye Cumhuriyeti kanunlarına tabidir ve doğabilecek uyuşmazlıklarda Ankara (Türkiye) Mahkemeleri ve İcra Daireleri yetkilidir. Gizlilik Politikası ile ilgili tüm soru, bildirim ve talepleriniz için bizimle e-posta üzerinden iletişime geçebilirsiniz: <a href="mailto:muzafferozdemir96@gmail.com">muzafferozdemir96@gmail.com</a></p>
+    </section>
+
+    <!-- ==================== ENGLISH ==================== -->
+    <section id="lang-en" class="lang-section" lang="en" dir="ltr">
+      <h1>TankFlow – Comprehensive Privacy Policy</h1>
+      <div class="meta">Developer: MZF Digital &nbsp;|&nbsp; Package: com.mzfdigital.tankflow &nbsp;|&nbsp; Effective Date: November 24, 2026</div>
+      <p>MZF Digital respects your privacy and is committed to transparency. This Comprehensive Privacy Policy ("Policy") explains how information is handled when you download, install, or use the TankFlow mobile application ("App"), details our local-first storage architecture, describes the scope of third-party services (Google AdMob and Google Play Billing), and defines the legal limitations of developer liability.</p>
+      <div class="notice"><strong>Important Notice:</strong> By downloading, installing, or using the App, you acknowledge that you have read, understood, and agreed to this Privacy Policy. If you do not agree, please discontinue use and uninstall the App immediately.</div>
+
+      <h2>1. Developer Information &amp; Scope</h2>
+      <p>This Policy applies solely to the TankFlow mobile application (<code>com.mzfdigital.tankflow</code>) developed by MZF Digital and distributed via Google Play Store. Third-party advertisements, external websites, and app store platforms operate under their own privacy policies and fall outside this Policy.</p>
+
+      <h2>2. Zero Personal Data Collection &amp; Local-First Storage</h2>
+      <p>TankFlow does not require account registration, login, or cloud sync. MZF Digital <strong>does not collect, request, transmit to servers, or store</strong> any personally identifiable information, including:</p>
+      <ul>
+        <li>Full name, government ID numbers, date of birth, or contact lists,</li>
+        <li>Phone number, home/work address, or SMS content,</li>
+        <li>Precise real-time or historical GPS location data,</li>
+        <li>Payment card details, bank accounts, or billing credentials,</li>
+        <li>Biometric, health, or other sensitive personal data.</li>
+      </ul>
+      <p>All vehicle profiles, odometer readings, fuel/EV charging logs, unit prices, costs, notes, and receipt photos you enter are stored exclusively on <strong>your device's local storage</strong>. MZF Digital has no remote access to your local records.</p>
+
+      <h2>3. Device Permissions</h2>
+      <ul>
+        <li><strong>Camera &amp; Photo Gallery:</strong> Accessed only when initiated by you to capture or attach a receipt photo to a log entry. Photos remain stored locally on your device.</li>
+        <li><strong>Local File Access:</strong> Used strictly at your request to import/export JSON backups and generate/share PDF and CSV reports.</li>
+        <li><strong>Network &amp; Internet Access:</strong> Used to load Google AdMob ads in the free tier, verify TankFlow Pro subscriptions via Google Play Billing, and open legal links.</li>
+      </ul>
+
+      <h2>4. Third-Party Advertising (Google AdMob)</h2>
+      <p>The free version of TankFlow uses <strong>Google AdMob</strong> (Banner, Native, and optional Rewarded ads) provided by Google LLC. Google AdMob and its partners may automatically collect and process device identifiers (Android Advertising ID), IP address (for approximate location/ad relevance), device model, OS version, app interaction events, and diagnostics for ad delivery, frequency capping, and fraud prevention.</p>
+      <p>You may reset your Advertising ID or opt out of personalized ads anytime in your Android settings (<em>Settings &gt; Google &gt; Ads</em>). Review <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Advertising Technologies</a>.</p>
+      <p><strong>Disclaimer:</strong> MZF Digital has no control over and assumes no liability for the data practices, cookies, SDK behaviors, ad content, or external links operated by Google AdMob or third-party ad networks.</p>
+
+      <h2>5. In-App Subscriptions (Google Play Billing)</h2>
+      <p>Optional monthly or yearly <strong>TankFlow Pro</strong> subscriptions are processed exclusively by Google LLC via <strong>Google Play Billing</strong>. All payments, renewals, cancellations, and refunds are governed solely by Google Play. MZF Digital never receives, views, or stores your financial or card information; only an anonymous local entitlement flag is cached on your device.</p>
+
+      <h2>6. Backups, Exports &amp; Data Loss Disclaimer</h2>
+      <p>Because data is stored solely on your device, creating regular backups via the <strong>JSON Export</strong> feature is strictly your responsibility. Once you export or share JSON, CSV, or PDF files externally, their security is solely your responsibility. MZF Digital is not liable for any data loss resulting from app uninstallation, device failure, OS updates, theft, loss, or factory resets, and cannot recover lost local data.</p>
+
+      <h2>7. Calculation Accuracy, LPG Safety &amp; Driving Safety Disclaimer</h2>
+      <p>All consumption figures, cost-per-km values, range estimates, combined fuel calculations, and LPG 80% safety fill reminders are purely informational mathematical estimates based on user input. TankFlow does not replace your vehicle's fuel gauge or manufacturer guidelines, and exported PDF/CSV files are not official tax, accounting, or legal documents. Never use the App while driving. MZF Digital bears zero liability for traffic fines, accidents, running out of fuel, or vehicle damage.</p>
+
+      <h2>8. Data Security, Retention &amp; Deletion Rights</h2>
+      <p>Your local records remain on your device until you delete them within the App or uninstall the App, which permanently removes all local data. Securing your device (screen lock, encryption, malware protection) is your sole responsibility.</p>
+
+      <h2>9. International Data Transfers &amp; Regional Rights (KVKK, GDPR, CCPA)</h2>
+      <p>MZF Digital does not operate backend servers and performs no direct cross-border transfers of personal data. Third-party providers (Google AdMob and Google Play) may process technical data globally under their own legal frameworks. Under KVKK, GDPR, and CCPA/CPRA, you retain full direct control over all local records on your device and may exercise third-party ad/billing privacy controls via your Google account.</p>
+
+      <h2>10. Children's Privacy</h2>
+      <p>TankFlow is not directed to children under 13 (or the applicable age of digital consent in your jurisdiction) and does not knowingly collect personal data from children.</p>
+
+      <h2>11. Maximum Limitation of Liability &amp; Force Majeure</h2>
+      <p>The App is provided "as-is" and "as-available" without warranties of any kind. To the fullest extent permitted by applicable law and mandatory consumer protection statutes, MZF Digital disclaims all liability for any direct, indirect, incidental, special, punitive, or consequential damages arising from app usage, unavailability, technical bugs, third-party SDK/ad/store issues, unauthorized device access, data loss, or force majeure events.</p>
+
+      <h2>12. Policy Updates</h2>
+      <p>MZF Digital reserves the right to update this Policy at any time without prior notice. Revisions take effect immediately upon publication on this page; continued use constitutes acceptance.</p>
+
+      <h2>13. Governing Law, Jurisdiction &amp; Contact</h2>
+      <p>Subject to mandatory consumer and data protection laws in your jurisdiction, this Policy is governed by the laws of the Republic of Türkiye, and the courts of Ankara, Türkiye shall have exclusive jurisdiction. Contact: <a href="mailto:muzafferozdemir96@gmail.com">muzafferozdemir96@gmail.com</a></p>
+    </section>
+
+    <!-- ==================== DEUTSCH ==================== -->
+    <section id="lang-de" class="lang-section" lang="de" dir="ltr">
+      <h1>TankFlow – Umfassende Datenschutzerklärung</h1>
+      <div class="meta">Entwickler: MZF Digital &nbsp;|&nbsp; Paket: com.mzfdigital.tankflow &nbsp;|&nbsp; Gültig ab: 24. November 2026</div>
+      <p>MZF Digital nimmt den Schutz Ihrer Privatsphäre ernst. Diese Datenschutzerklärung erläutert transparent, wie Informationen bei der Nutzung der mobilen App TankFlow verarbeitet werden, wie die lokale Datenspeicherung funktioniert, welche Drittanbieterdienste eingebunden sind und wo die rechtlichen Haftungsgrenzen liegen.</p>
+      <div class="notice"><strong>Wichtiger Hinweis:</strong> Mit dem Herunterladen, Installieren oder Nutzen der App erklären Sie sich mit dieser Datenschutzerklärung einverstanden. Falls Sie nicht zustimmen, nutzen Sie die App bitte nicht und deinstallieren Sie sie.</div>
+
+      <h2>1. Verantwortlicher und Geltungsbereich</h2>
+      <p>Diese Erklärung gilt ausschließlich für die von MZF Digital entwickelte App TankFlow (<code>com.mzfdigital.tankflow</code>). Externe Websites, App-Stores und Werbenetzwerke unterliegen ihren eigenen Datenschutzbestimmungen.</p>
+
+      <h2>2. Keine Erhebung personenbezogener Daten &amp; Lokale Speicherung</h2>
+      <p>TankFlow erfordert kein Konto und keine Cloud-Anmeldung. MZF Digital erhebt, speichert oder überträgt <strong>keinerlei personenbezogene Daten</strong> (wie Name, Telefonnummer, Adresse, GPS-Standort, Bank- oder Kartendaten). Alle Fahrzeugdaten, Tank-/Ladeeinträge, Kilometerstände und Belegfotos werden ausschließlich <strong>lokal auf Ihrem Gerät</strong> gespeichert.</p>
+
+      <h2>3. Geräteberechtigungen</h2>
+      <ul>
+        <li><strong>Kamera &amp; Galerie:</strong> Nur auf Ihren ausdrücklichen Wunsch zum Fotografieren oder Hinzufügen von Tankbelegen (rein lokale Speicherung).</li>
+        <li><strong>Lokaler Dateizugriff:</strong> Nur zum Import/Export von JSON-Backups sowie PDF- und CSV-Berichten.</li>
+        <li><strong>Internetzugriff:</strong> Zum Laden von Google AdMob-Anzeigen, zur Überprüfung von TankFlow Pro-Abonnements über Google Play Billing und zum Öffnen rechtlicher Seiten.</li>
+      </ul>
+
+      <h2>4. Drittanbieter-Werbung (Google AdMob)</h2>
+      <p>Die kostenlose Version nutzt <strong>Google AdMob</strong> (Banner-, Native- und Prämienanzeigen) der Google LLC. Google AdMob kann Werbe-ID (Advertising ID), IP-Adresse, Geräteinformationen und Nutzungsinteraktionen gemäß der <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google-Datenschutzerklärung</a> verarbeiten. Personalisierte Werbung lässt sich jederzeit in den Android-Einstellungen deaktivieren. MZF Digital hat keine Kontrolle über Datenpraktiken oder Inhalte von Drittanbietern und übernimmt hierfür keinerlei Haftung.</p>
+
+      <h2>5. Abonnements (Google Play Billing)</h2>
+      <p>Optionale TankFlow Pro-Abonnements werden ausschließlich über <strong>Google Play Billing</strong> abgewickelt. MZF Digital erhält niemals Zugriff auf Ihre Zahlungs- oder Kartendaten; lediglich der anonyme Abo-Status wird lokal zwischengespeichert.</p>
+
+      <h2>6. Datensicherung und Haftungsausschluss bei Datenverlust</h2>
+      <p>Für regelmäßige Backups über den <strong>JSON-Export</strong> sowie die Sicherheit extern geteilter Dateien sind Sie allein verantwortlich. MZF Digital haftet nicht für Datenverlust durch Deinstallation, Gerätedefekt, Updates oder Zurücksetzen; verlorene lokale Daten können nicht wiederhergestellt werden.</p>
+
+      <h2>7. Berechnungen, LPG-Sicherheit &amp; Fahrsicherheit</h2>
+      <p>Verbrauchs-, Kosten- und Reichweitenwerte sowie Hinweise zur 80%-LPG-Füllgrenze sind rein unverbindliche Schätzungen. Exportierte PDF/CSV-Dateien stellen keine amtlichen Steuer- oder Rechtsdokumente dar. Die App darf niemals während der Fahrt bedient werden. Für Bußgelder, Unfälle, Liegenbleiben oder Fahrzeugschäden wird keine Haftung übernommen.</p>
+
+      <h2>8. Datensicherheit, Speicherdauer und Löschung</h2>
+      <p>Die Absicherung Ihres Geräts liegt in Ihrer Verantwortung. Alle lokalen Daten verbleiben auf dem Gerät, bis Sie diese in der App löschen oder die App vollständig deinstallieren.</p>
+
+      <h2>9. Internationale Übermittlung &amp; Rechte (DSGVO / KVKK)</h2>
+      <p>MZF Digital betreibt keine eigenen Server und übermittelt keine personenbezogenen Daten ins Ausland. Drittanbieter (Google AdMob / Google Play) verarbeiten technische Daten im Rahmen ihrer globalen Infrastruktur. Sie behalten volle Kontrolle über lokale Daten und können Werbe-/Datenschutzeinstellungen direkt in Ihrem Google-Konto verwalten.</p>
+
+      <h2>10. Datenschutz für Kinder</h2>
+      <p>TankFlow richtet sich nicht an Kinder unter 13 Jahren (bzw. dem gesetzlichen Mindestalter) und erhebt wissentlich keine Daten von Kindern.</p>
+
+      <h2>11. Haftungsbeschränkung &amp; Höhere Gewalt</h2>
+      <p>Die App wird „wie besehen“ (as-is) ohne Gewährleistung bereitgestellt. Soweit nach geltendem Recht zulässig, haftet MZF Digital nicht für direkte, indirekte, zufällige oder Folgeschäden aus Nutzung, Ausfällen, Drittanbieterdiensten, unbefugtem Gerätezugriff, Datenverlust oder höherer Gewalt.</p>
+
+      <h2>12. Änderungen dieser Erklärung</h2>
+      <p>MZF Digital behält sich vor, diese Datenschutzerklärung jederzeit zu aktualisieren. Änderungen gelten ab Veröffentlichung auf dieser Seite.</p>
+
+      <h2>13. Anwendbares Recht, Gerichtsstand und Kontakt</h2>
+      <p>Vorbehaltlich zwingender Verbraucherschutzgesetze gilt das Recht der Republik Türkei; Gerichtsstand ist Ankara, Türkei. Kontakt: <a href="mailto:muzafferozdemir96@gmail.com">muzafferozdemir96@gmail.com</a></p>
+    </section>
+
+    <!-- ==================== FRANÇAIS ==================== -->
+    <section id="lang-fr" class="lang-section" lang="fr" dir="ltr">
+      <h1>TankFlow – Politique de Confidentialité Complète</h1>
+      <div class="meta">Développeur : MZF Digital &nbsp;|&nbsp; Package : com.mzfdigital.tankflow &nbsp;|&nbsp; Date d'effet : 24 novembre 2026</div>
+      <p>MZF Digital accorde une grande importance à votre vie privée. La présente Politique de Confidentialité explique en détail le traitement des données dans l'application mobile TankFlow, notre architecture de stockage local, le rôle des services tiers (Google AdMob et Google Play) ainsi que les limites de responsabilité du développeur.</p>
+      <div class="notice"><strong>Avis important :</strong> En téléchargeant, installant ou utilisant l'Application, vous acceptez l'intégralité de cette Politique. Si vous n'êtes pas d'accord, veuillez ne pas utiliser l'Application et la désinstaller.</div>
+
+      <h2>1. Développeur et Champ d'application</h2>
+      <p>Cette Politique s'applique uniquement à l'application TankFlow (<code>com.mzfdigital.tankflow</code>) développée par MZF Digital. Les publicités tierces, liens externes et plateformes de téléchargement sont régis par leurs propres politiques.</p>
+
+      <h2>2. Absence de collecte personnelle &amp; Stockage local</h2>
+      <p>TankFlow ne requiert aucun compte ni synchronisation cloud. MZF Digital ne collecte, ne transfère ni ne stocke <strong>aucune donnée personnelle identifiable</strong> (nom, téléphone, adresse, position GPS, données bancaires). Tous vos véhicules, pleins/recharges, kilométrages et photos de reçus sont enregistrés exclusivement <strong>en local sur votre appareil</strong>.</p>
+
+      <h2>3. Autorisations de l'appareil</h2>
+      <ul>
+        <li><strong>Appareil photo et Galerie :</strong> Utilisés uniquement à votre initiative pour joindre une photo de reçu (stockage strictement local).</li>
+        <li><strong>Accès aux fichiers locaux :</strong> Uniquement à votre demande pour l'import/export JSON et la génération de rapports PDF/CSV.</li>
+        <li><strong>Accès Internet :</strong> Utilisé pour afficher les annonces Google AdMob, vérifier les abonnements TankFlow Pro via Google Play Billing et ouvrir les pages légales.</li>
+      </ul>
+
+      <h2>4. Publicités tierces (Google AdMob)</h2>
+      <p>La version gratuite utilise <strong>Google AdMob</strong> (bannières, annonces natives et récompensées). Google AdMob peut collecter l'identifiant publicitaire, l'adresse IP, les caractéristiques de l'appareil et les interactions publicitaires conformément à la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Politique de confidentialité de Google</a>. Vous pouvez désactiver la personnalisation dans les réglages Android. MZF Digital n'exerce aucun contrôle sur ces réseaux tiers et décline toute responsabilité quant à leurs pratiques ou contenus.</p>
+
+      <h2>5. Abonnements intégrés (Google Play Billing)</h2>
+      <p>Les abonnements mensuels ou annuels TankFlow Pro sont traités exclusivement via <strong>Google Play Billing</strong>. MZF Digital n'accède jamais à vos coordonnées bancaires ; seul un indicateur local anonyme d'abonnement actif est mémorisé sur l'appareil.</p>
+
+      <h2>6. Sauvegardes et Non-responsabilité en cas de perte de données</h2>
+      <p>La sauvegarde régulière via l'<strong>Export JSON</strong> et la sécurité des fichiers exportés relèvent de votre seule responsabilité. MZF Digital ne saurait être tenu responsable de toute perte de données due à une désinstallation, panne, mise à jour ou réinitialisation, et ne peut restaurer les données perdues.</p>
+
+      <h2>7. Calculs, Sécurité GPL et Sécurité routière</h2>
+      <p>Les estimations de consommation, coûts au km, autonomie et rappels de limite GPL à 80 % sont purement indicatifs. Les rapports PDF/CSV n'ont aucune valeur fiscale, comptable ou juridique officielle. N'utilisez jamais l'Application en conduisant. MZF Digital décline toute responsabilité en cas d'amende, accident, panne sèche ou dommage mécanique.</p>
+
+      <h2>8. Sécurité, Conservation et Droit à l'effacement</h2>
+      <p>La protection de votre appareil vous incombe. Toutes les données restent en local jusqu'à leur suppression dans l'Application ou la désinstallation complète de celle-ci.</p>
+
+      <h2>9. Transferts internationaux &amp; Droits (RGPD / KVKK)</h2>
+      <p>MZF Digital n'exploite aucun serveur distant et ne transfère aucune donnée personnelle. Les prestataires tiers (Google AdMob / Google Play) traitent des données techniques selon leurs propres cadres légaux. Vous gardez un contrôle total sur vos données locales et vos paramètres Google.</p>
+
+      <h2>10. Confidentialité des enfants</h2>
+      <p>TankFlow ne s'adresse pas aux enfants de moins de 13 ans (ou de l'âge légal applicable) et ne collecte sciemment aucune donnée les concernant.</p>
+
+      <h2>11. Limitation maximale de responsabilité &amp; Force majeure</h2>
+      <p>L'Application est fournie « en l'état » sans garantie. Dans toute la mesure permise par la loi applicable, MZF Digital ne pourra être tenu responsable de tout dommage direct, indirect, accessoire ou consécutif lié à l'utilisation, aux pannes, aux services tiers, à un accès non autorisé ou à un cas de force majeure.</p>
+
+      <h2>12. Modifications</h2>
+      <p>MZF Digital peut modifier cette Politique à tout moment. Toute mise à jour prend effet dès sa publication sur cette page.</p>
+
+      <h2>13. Droit applicable, Juridiction et Contact</h2>
+      <p>Sous réserve des dispositions impératives de protection des consommateurs, la présente Politique est régie par le droit de la République de Turquie (tribunaux compétents : Ankara, Turquie). Contact : <a href="mailto:muzafferozdemir96@gmail.com">muzafferozdemir96@gmail.com</a></p>
+    </section>
+
+    <!-- ==================== РУССКИЙ ==================== -->
+    <section id="lang-ru" class="lang-section" lang="ru" dir="ltr">
+      <h1>TankFlow – Подробная политика конфиденциальности</h1>
+      <div class="meta">Разработчик: MZF Digital &nbsp;|&nbsp; Пакет: com.mzfdigital.tankflow &nbsp;|&nbsp; Дата вступления в силу: 24 ноября 2026 г.</div>
+      <p>MZF Digital уважает вашу конфиденциальность. Настоящая Политика подробно описывает порядок работы с данными в мобильном приложении TankFlow, принцип локального хранения, использование сторонних сервисов (Google AdMob и Google Play Billing), а также ограничения ответственности разработчика.</p>
+      <div class="notice"><strong>Важное уведомление:</strong> Скачивая, устанавливая или используя Приложение, вы полностью принимаете условия настоящей Политики. Если вы не согласны с ними, прекратите использование и удалите Приложение.</div>
+
+      <h2>1. Разработчик и область действия</h2>
+      <p>Настоящая Политика распространяется исключительно на приложение TankFlow (<code>com.mzfdigital.tankflow</code>) от MZF Digital. Сторонние рекламные сети, внешние сайты и магазины приложений регулируются собственными политиками.</p>
+
+      <h2>2. Отсутствие сбора личных данных и локальное хранение</h2>
+      <p>TankFlow не требует регистрации и облачной синхронизации. MZF Digital <strong>не собирает, не запрашивает и не передает на серверы</strong> персональные данные (ФИО, телефон, адрес, GPS-координаты, данные банковских карт). Все записи об автомобилях, заправках, пробеге и фото чеков хранятся исключительно <strong>локально на вашем устройстве</strong>.</p>
+
+      <h2>3. Разрешения устройства</h2>
+      <ul>
+        <li><strong>Камера и галерея:</strong> Используются только по вашему действию для прикрепления фото чеков (хранятся только на устройстве).</li>
+        <li><strong>Доступ к локальным файлам:</strong> Только для импорта/экспорта резервных копий JSON и создания отчетов PDF/CSV.</li>
+        <li><strong>Доступ в Интернет:</strong> Для показа рекламы Google AdMob, проверки подписок TankFlow Pro через Google Play Billing и открытия юридических страниц.</li>
+      </ul>
+
+      <h2>4. Сторонняя реклама (Google AdMob)</h2>
+      <p>В бесплатной версии используется <strong>Google AdMob</strong> (баннеры, нативная реклама и реклама с вознаграждением). Google AdMob может обрабатывать рекламный идентификатор (Advertising ID), IP-адрес, параметры устройства и данные о взаимодействиях согласно <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Политике конфиденциальности Google</a>. Вы можете отключить персонализацию рекламы в настройках Android. MZF Digital не контролирует сторонние рекламные сети и не несет ответственности за их политику и содержание рекламы.</p>
+
+      <h2>5. Подписки (Google Play Billing)</h2>
+      <p>Подписки TankFlow Pro оформляются исключительно через <strong>Google Play Billing</strong>. MZF Digital не имеет доступа к вашим платежным данным; на устройстве кэшируется только анонимный статус активной подписки.</p>
+
+      <h2>6. Резервное копирование и отказ от ответственности за потерю данных</h2>
+      <p>Создание резервных копий через <strong>Экспорт JSON</strong> и сохранность переданных файлов являются исключительно вашей ответственностью. MZF Digital не несет ответственности за потерю данных при удалении приложения, поломке, обновлении или сбросе устройства и не может их восстановить.</p>
+
+      <h2>7. Точность расчетов, безопасность ГБО (LPG) и ПДД</h2>
+      <p>Все расчеты расхода, стоимости км, запаса хода и лимита заправки ГБО (80%) носят справочный характер. Отчеты PDF/CSV не являются официальными налоговыми, бухгалтерскими или юридическими документами. Запрещается использовать Приложение во время вождения. Разработчик не несет ответственности за штрафы, ДТП, пустой бак или поломки автомобиля.</p>
+
+      <h2>8. Безопасность, хранение и удаление данных</h2>
+      <p>Защита устройства (пароль, антивирус) лежит на пользователе. Все локальные данные хранятся до их удаления в Приложении или полного удаления Приложения с устройства.</p>
+
+      <h2>9. Международная передача данных и права (GDPR / KVKK)</h2>
+      <p>MZF Digital не использует собственные серверы и не осуществляет трансграничную передачу личных данных. Сторонние провайдеры (Google AdMob / Google Play) обрабатывают технические данные в рамках своей глобальной инфраструктуры. Вы полностью контролируете локальные данные и настройки конфиденциальности Google.</p>
+
+      <h2>10. Конфиденциальность детей</h2>
+      <p>Приложение не предназначено для детей младше 13 лет (или иного установленного законом возраста) и сознательно не собирает их данные.</p>
+
+      <h2>11. Максимальное ограничение ответственности и форс-мажор</h2>
+      <p>Приложение предоставляется «как есть» (as-is) без гарантий. В максимальной степени, допускаемой законом, MZF Digital не несет ответственности за любые прямые, косвенные, случайные или последующие убытки, вызванные использованием, сбоями, сторонними сервисами, несанкционированным доступом, потерей данных или форс-мажором.</p>
+
+      <h2>12. Изменения Политики</h2>
+      <p>MZF Digital вправе обновлять настоящую Политику в любое время без предварительного уведомления. Изменения вступают в силу с момента публикации на данной странице.</p>
+
+      <h2>13. Применимое право, подсудность и контакты</h2>
+      <p>С учетом обязательных норм защиты прав потребителей применяются законы Турецкой Республики; споры рассматриваются в судах г. Анкара (Турция). Контакты: <a href="mailto:muzafferozdemir96@gmail.com">muzafferozdemir96@gmail.com</a></p>
+    </section>
+
+    <!-- ==================== العربية ==================== -->
+    <section id="lang-ar" class="lang-section" lang="ar" dir="rtl">
+      <h1>TankFlow – سياسة الخصوصية الشاملة</h1>
+      <div class="meta">المطور: MZF Digital &nbsp;|&nbsp; المعرف: com.mzfdigital.tankflow &nbsp;|&nbsp; تاريخ السريان: 24 نوفمبر 2026</div>
+      <p>تحترم MZF Digital خصوصيتك وتلتزم بالشفافية الكاملة. توضح سياسة الخصوصية الشاملة هذه كيفية التعامل مع البيانات عند استخدام تطبيق TankFlow، وآلية التخزين المحلي بالكامل، ونطاق خدمات الجهات الخارجية (Google AdMob وGoogle Play Billing)، والحدود القانونية لمسؤولية المطور.</p>
+      <div class="notice"><strong>تنبيه مهم:</strong> بتنزيل التطبيق أو تثبيته أو استخدامه، فإنك تقر بأنك قرأت وفهمت ووافقت على جميع بنود هذه السياسة. إذا كنت لا توافق، يُرجى عدم استخدام التطبيق وإزالته فوراً.</div>
+
+      <h2>1. معلومات المطور ونطاق السياسة</h2>
+      <p>تنطبق هذه السياسة حصرياً على تطبيق TankFlow (<code>com.mzfdigital.tankflow</code>) الذي طورته MZF Digital. تخضع الإعلانات الخارجية والروابط ومتاجر التطبيقات لسياسات الخصوصية الخاصة بها.</p>
+
+      <h2>2. عدم جمع البيانات الشخصية والتخزين المحلي</h2>
+      <p>لا يتطلب TankFlow إنشاء حساب أو مزامنة سحابية. <strong>لا تجمع MZF Digital ولا تطلب ولا تنقل ولا تخزن</strong> أي بيانات شخصية تعريفية (مثل الاسم أو رقم الهاتف أو العنوان أو الموقع الجغرافي الدقيق أو بيانات البطاقات البنكية). تُحفظ جميع سجلات المركبات والوقود والعداد وصور الإيصالات حصرياً <strong>محلياً على جهازك فقط</strong> دون أي وصول عن بُعد من قِبل المطور.</p>
+
+      <h2>3. أذونات الجهاز</h2>
+      <ul>
+        <li><strong>الكاميرا والمعرض:</strong> تُستخدم فقط عند طلبك لإرفاق صورة إيصال (تُحفظ محلياً فقط).</li>
+        <li><strong>الوصول للملفات المحلية:</strong> فقط لاستيراد/تصدير النسخ الاحتياطية (JSON) وإنشاء تقارير PDF وCSV.</li>
+        <li><strong>الاتصال بالإنترنت:</strong> لعرض إعلانات Google AdMob، والتحقق من اشتراكات TankFlow Pro عبر Google Play Billing، وفتح الصفحات القانونية.</li>
+      </ul>
+
+      <h2>4. الإعلانات الخارجية (Google AdMob)</h2>
+      <p>تعتمد النسخة المجانية على <strong>Google AdMob</strong> (إعلانات البانر، المدمجة، والإعلانات بمكافأة). قد تجمع Google AdMob معرّف الإعلانات وعنوان IP ومواصفات الجهاز وتفاعلات الإعلانات وفقاً لـ <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">سياسة خصوصية Google</a>. يمكنك تعطيل تخصيص الإعلانات من إعدادات جهازك في أي وقت. لا تملك MZF Digital أي سيطرة على شبكات الإعلانات الخارجية ولا تتحمل أي مسؤولية عن ممارساتها أو محتواها.</p>
+
+      <h2>5. الاشتراكات داخل التطبيق (Google Play Billing)</h2>
+      <p>تتم معالجة اشتراكات TankFlow Pro الشهرية والسنوية حصرياً عبر <strong>Google Play Billing</strong>. لا تطلع MZF Digital أبداً على بيانات الدفع أو البطاقات البنكية، وتحتفظ فقط بحالة الاشتراك المجهولة محلياً على الجهاز.</p>
+
+      <h2>6. النسخ الاحتياطي وإخلاء المسؤولية عن فقدان البيانات</h2>
+      <p>تقع مسؤولية إنشاء نسخ احتياطية بانتظام عبر ميزة <strong>تصدير JSON</strong> وحماية الملفات المُصدَّرة على عاتقك وحدك. لا تتحمل MZF Digital أي مسؤولية عن فقدان البيانات نتيجة حذف التطبيق أو تلف الجهاز أو التحديثات أو إعادة ضبط المصنع، ولا يمكنها استرداد البيانات المفقودة.</p>
+
+      <h2>7. دقة الحسابات وسلامة الغاز (LPG) والسلامة المرورية</h2>
+      <p>جميع حسابات الاستهلاك والتكلفة والمدى وتنبيهات حد التعبئة الآمن للغاز (80%) هي تقديرات إرشادية فقط، ولا تُعد تقارير PDF/CSV مستندات ضريبية أو محاسبية أو قانونية رسمية. يُمنع استخدام التطبيق أثناء القيادة. لا تتحمل MZF Digital أي مسؤولية عن المخالفات المرورية أو الحوادث أو نفاد الوقود أو أعطال المركبة.</p>
+
+      <h2>8. أمن البيانات والاحتفاظ بها وحق الحذف</h2>
+      <p>حماية جهازك هي مسؤوليتك الخاصة. تبقى بياناتك محلياً حتى تقوم بحذفها داخل التطبيق أو إلغاء تثبيت التطبيق نهائياً.</p>
+
+      <h2>9. النقل الدولي للبيانات والحقوق القانونية (KVKK / GDPR)</h2>
+      <p>لا تمتلك MZF Digital خوادم خلفية ولا تنقل أي بيانات شخصية دولياً. قد تعالج الجهات الخارجية (Google AdMob / Google Play) بيانات تقنية وفق أطرها القانونية العالمية. تحتفظ بالسيطرة الكاملة على بياناتك المحلية وإعدادات خصوصية Google.</p>
+
+      <h2>10. خصوصية الأطفال</h2>
+      <p>التطبيق غير موجه للأطفال دون سن 13 عاماً (أو سن الموافقة الرقمية القانوني) ولا يجمع بياناتهم عن قصد.</p>
+
+      <h2>11. حدود المسؤولية القصوى والقوة القاهرة</h2>
+      <p>يُقدَّم التطبيق "كما هو" دون أي ضمانات. إلى أقصى حد يسمح به القانون، تخلي MZF Digital مسؤوليتها الكاملة عن أي أضرار مباشرة أو غير مباشرة أو عرضية أو تبعية ناتجة عن الاستخدام أو الأعطال أو خدمات الجهات الخارجية أو الوصول غير المصرح به أو فقدان البيانات أو القوة القاهرة.</p>
+
+      <h2>12. تعديلات السياسة</h2>
+      <p>تحتفظ MZF Digital بحق تحديث هذه السياسة في أي وقت دون إشعار مسبق، وتسري التعديلات فور نشرها في هذه الصفحة.</p>
+
+      <h2>13. القانون الواجب التطبيق والاختصاص القضائي والتواصل</h2>
+      <p>مع مراعاة حقوق المستهلك الإلزامية، تخضع هذه السياسة لقوانين الجمهورية التركية وتختص محاكم أنقرة (تركيا) بأي نزاع. للتواصل: <a href="mailto:muzafferozdemir96@gmail.com">muzafferozdemir96@gmail.com</a></p>
+    </section>
+
+    <!-- ==================== اردو ==================== -->
+    <section id="lang-ur" class="lang-section" lang="ur" dir="rtl">
+      <h1>TankFlow – جامع رازداری کی پالیسی</h1>
+      <div class="meta">ڈویلپر: MZF Digital &nbsp;|&nbsp; پیکیج: com.mzfdigital.tankflow &nbsp;|&nbsp; نفاذ کی تاریخ: 24 نومبر 2026</div>
+      <p>MZF Digital آپ کی رازداری کا احترام کرتا ہے۔ یہ جامع پالیسی واضح کرتی ہے کہ TankFlow موبائل ایپ میں ڈیٹا کو کیسے سنبھالا جاتا ہے، مقامی اسٹوریج کا نظام کیسے کام کرتا ہے، تھرڈ پارٹی سروسز (Google AdMob اور Google Play Billing) کا دائرہ کار کیا ہے، اور ڈویلپر کی قانونی ذمہ داری کی حدود کیا ہیں۔</p>
+      <div class="notice"><strong>اہم اطلاع:</strong> ایپ ڈاؤن لوڈ، انسٹال یا استعمال کر کے آپ اس پالیسی کی تمام شرائط سے اتفاق کرتے ہیں۔ اگر آپ متفق نہیں ہیں تو براہِ کرم ایپ استعمال نہ کریں اور اسے فوراً ہٹا دیں۔</div>
+
+      <h2>1. ڈویلپر کی معلومات اور دائرہ کار</h2>
+      <p>یہ پالیسی صرف MZF Digital کی تیار کردہ ایپ TankFlow (<code>com.mzfdigital.tankflow</code>) پر لاگو ہوتی ہے۔ تھرڈ پارٹی اشتہارات، بیرونی لنکس اور ایپ اسٹورز اپنی پالیسیوں کے تابع ہیں۔</p>
+
+      <h2>2. ذاتی ڈیٹا جمع نہ کرنا اور مقامی اسٹوریج</h2>
+      <p>TankFlow کے لیے کسی اکاؤنٹ یا کلاؤڈ سنک کی ضرورت نہیں ہے۔ MZF Digital <strong>کوئی بھی ذاتی شناختی معلومات جمع، منتقل یا محفوظ نہیں کرتا</strong> (جیسے نام، فون نمبر، پتہ، GPS لوکیشن یا بینک کارڈ کی تفصیلات)۔ گاڑیوں، ایندھن، مائلیج اور رسیدوں کی تمام تصاویر صرف <strong>آپ کے فون کی مقامی میموری</strong> میں محفوظ رہتی ہیں۔</p>
+
+      <h2>3. آلے کی اجازتیں</h2>
+      <ul>
+        <li><strong>کیمرہ اور گیلری:</strong> صرف آپ کی ہدایت پر رسید کی تصویر شامل کرنے کے لیے (مکمل طور پر مقامی اسٹوریج)۔</li>
+        <li><strong>مقامی فائلز تک رسائی:</strong> صرف JSON بیک اپ امپورٹ/ایکسپورٹ اور PDF/CSV رپورٹس بنانے کے لیے۔</li>
+        <li><strong>انٹرنیٹ تک رسائی:</strong> مفت ورژن میں Google AdMob اشتہارات دکھانے، Google Play Billing کے ذریعے TankFlow Pro کی تصدیق اور قانونی صفحات کھولنے کے لیے۔</li>
+      </ul>
+
+      <h2>4. تھرڈ پارٹی اشتہارات (Google AdMob)</h2>
+      <p>مفت ورژن <strong>Google AdMob</strong> (بینر، نیٹو اور ریوارڈڈ اشتہارات) استعمال کرتا ہے۔ Google AdMob اپنی <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google رازداری کی پالیسی</a> کے تحت ایڈورٹائزنگ آئی ڈی، آئی پی ایڈریس اور ڈیوائس کی معلومات پراسیس کر سکتا ہے۔ آپ اینڈرائیڈ سیٹنگز سے ذاتی اشتہارات بند کر سکتے ہیں۔ MZF Digital تھرڈ پارٹی اشتہاری نیٹ ورکس کے مواد یا طریقوں کا کوئی ذمہ دار نہیں ہے۔</p>
+
+      <h2>5. سبسکرپشنز (Google Play Billing)</h2>
+      <p>TankFlow Pro کی ماہانہ اور سالانہ ادائیگیاں مکمل طور پر <strong>Google Play Billing</strong> کے ذریعے ہوتی ہیں۔ MZF Digital آپ کے کارڈ یا بینک کی معلومات کبھی نہیں دیکھتا اور نہ محفوظ کرتا ہے۔</p>
+
+      <h2>6. بیک اپ اور ڈیٹا کے ضیاع سے بریت</h2>
+      <p><strong>JSON ایکسپورٹ</strong> کے ذریعے باقاعدہ بیک اپ بنانا اور برآمد شدہ فائلوں کی حفاظت صارف کی اپنی ذمہ داری ہے۔ ایپ ڈیلیٹ ہونے، فون خراب ہونے، اپ ڈیٹ یا ری سیٹ کی صورت میں ڈیٹا ضائع ہونے پر MZF Digital ذمہ دار نہیں ہوگا اور ضائع شدہ ڈیٹا بحال نہیں کیا جا سکتا۔</p>
+
+      <h2>7. حساب کتاب، LPG سیفٹی اور ڈرائیونگ سیفٹی</h2>
+      <p>ایندھن کی اوسط، لاگت، رینج اور LPG 80% حد کی تنبیہات محض تخمینے ہیں؛ PDF/CSV رپورٹس سرکاری ٹیکس یا قانونی دستاویزات نہیں ہیں۔ گاڑی چلاتے وقت ایپ ہرگز استعمال نہ کریں۔ جرمانے، حادثے، ایندھن ختم ہونے یا گاڑی کے نقصان کی ذمہ داری MZF Digital پر عائد نہیں ہوگی۔</p>
+
+      <h2>8. ڈیٹا سیکیورٹی، برقرار رکھنے کی مدت اور حذف کرنا</h2>
+      <p>فون کی حفاظت صارف کی ذمہ داری ہے۔ آپ کا ڈیٹا صرف اس وقت تک فون میں رہتا ہے جب تک آپ اسے ایپ سے حذف یا ایپ کو ان انسٹال نہ کر دیں۔</p>
+
+      <h2>9. بین الاقوامی ڈیٹا منتقلی اور حقوق (KVKK / GDPR)</h2>
+      <p>MZF Digital کوئی سرور استعمال نہیں کرتا اور کوئی ذاتی ڈیٹا منتقل نہیں کرتا۔ تھرڈ پارٹی سروسز (Google AdMob / Google Play) اپنے عالمی نظام کے تحت تکنیکی ڈیٹا پراسیس کر سکتی ہیں۔</p>
+
+      <h2>10. بچوں کی رازداری</h2>
+      <p>یہ ایپ 13 سال سے کم عمر بچوں کے لیے نہیں ہے اور جان بوجھ کر بچوں کا کوئی ڈیٹا جمع نہیں کرتی۔</p>
+
+      <h2>11. ذمہ داری کی زیادہ سے زیادہ حد اور ناگزیر حالات</h2>
+      <p>ایپ بغیر کسی ضمانت کے "جیسی ہے" فراہم کی جاتی ہے۔ قانون کی اجازت کی انتہائی حد تک، MZF Digital کسی بھی براہِ راست، بالواسطہ یا حادثاتی نقصان، تکنیکی خرابی، تھرڈ پارٹی سروسز، غیر مجاز رسائی، ڈیٹا ضیاع یا ناگزیر حالات (Force Majeure) کا ذمہ دار نہیں ہوگا۔</p>
+
+      <h2>12. پالیسی میں تبدیلیاں</h2>
+      <p>MZF Digital بغیر پیشگی اطلاع کے کسی بھی وقت اس پالیسی میں ترمیم کر سکتا ہے۔ تبدیلیاں اس صفحے پر شائع ہوتے ہی نافذ ہوں گی۔</p>
+
+      <h2>13. قابلِ اطلاق قانون، عدالتی اختیار اور رابطہ</h2>
+      <p>لازمی صارف قوانین کو مدنظر رکھتے ہوئے، اس پالیسی پر جمہوریہ ترکی کے قوانین لاگو ہوں گے اور انقرہ (ترکی) کی عدالتیں مجاز ہوں گی۔ رابطہ: <a href="mailto:muzafferozdemir96@gmail.com">muzafferozdemir96@gmail.com</a></p>
+    </section>
+
+    <!-- ==================== BAHASA INDONESIA ==================== -->
+    <section id="lang-id" class="lang-section" lang="id" dir="ltr">
+      <h1>TankFlow – Kebijakan Privasi Lengkap</h1>
+      <div class="meta">Pengembang: MZF Digital &nbsp;|&nbsp; Paket: com.mzfdigital.tankflow &nbsp;|&nbsp; Tanggal Berlaku: 24 November 2026</div>
+      <p>MZF Digital menghormati privasi Anda dan berkomitmen pada transparansi penuh. Kebijakan Privasi Lengkap ini menjelaskan pengelolaan informasi pada aplikasi seluler TankFlow, arsitektur penyimpanan lokal, peran layanan pihak ketiga (Google AdMob dan Google Play Billing), serta batasan tanggung jawab hukum pengembang.</p>
+      <div class="notice"><strong>Pemberitahuan Penting:</strong> Dengan mengunduh, memasang, atau menggunakan Aplikasi ini, Anda menyatakan telah membaca, memahami, dan menyetujui seluruh isi Kebijakan ini. Jika tidak setuju, harap hentikan penggunaan dan hapus aplikasi segera.</div>
+
+      <h2>1. Informasi Pengembang &amp; Ruang Lingkup</h2>
+      <p>Kebijakan ini hanya berlaku untuk aplikasi TankFlow (<code>com.mzfdigital.tankflow</code>) yang dikembangkan oleh MZF Digital. Iklan pihak ketiga, tautan eksternal, dan toko aplikasi tunduk pada kebijakan privasi masing-masing.</p>
+
+      <h2>2. Tanpa Pengumpulan Data Pribadi &amp; Penyimpanan Lokal</h2>
+      <p>TankFlow tidak memerlukan pendaftaran akun atau sinkronisasi cloud. MZF Digital <strong>tidak mengumpulkan, meminta, mengirim ke server, atau menyimpan</strong> data identitas pribadi apa pun (nama, nomor telepon, alamat, lokasi GPS, atau data kartu bank). Seluruh data kendaraan, catatan pengisian bahan bakar/EV, odometer, dan foto struk disimpan semata-mata <strong>secara lokal di perangkat Anda</strong>.</p>
+
+      <h2>3. Izin Perangkat</h2>
+      <ul>
+        <li><strong>Kamera &amp; Galeri:</strong> Hanya digunakan atas permintaan Anda untuk melampirkan foto struk (disimpan lokal).</li>
+        <li><strong>Akses File Lokal:</strong> Hanya untuk impor/ekspor cadangan JSON dan pembuatan laporan PDF/CSV.</li>
+        <li><strong>Akses Internet:</strong> Untuk memuat iklan Google AdMob, memverifikasi langganan TankFlow Pro melalui Google Play Billing, dan membuka halaman hukum.</li>
+      </ul>
+
+      <h2>4. Iklan Pihak Ketiga (Google AdMob)</h2>
+      <p>Versi gratis menggunakan <strong>Google AdMob</strong> (iklan banner, native, dan berhadiah). Google AdMob dapat memproses ID Iklan, alamat IP, spesifikasi perangkat, dan interaksi iklan sesuai <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Kebijakan Privasi Google</a>. Anda dapat menonaktifkan personalisasi iklan melalui pengaturan Android. MZF Digital tidak memiliki kendali atas jaringan iklan pihak ketiga dan tidak bertanggung jawab atas praktik data atau konten iklan mereka.</p>
+
+      <h2>5. Langganan Dalam Aplikasi (Google Play Billing)</h2>
+      <p>Langganan bulanan atau tahunan TankFlow Pro diproses sepenuhnya oleh <strong>Google Play Billing</strong>. MZF Digital tidak pernah melihat atau menyimpan informasi pembayaran Anda; hanya status langganan anonim yang disimpan sementara di perangkat.</p>
+
+      <h2>6. Pencadangan &amp; Penyangkalan Kehilangan Data</h2>
+      <p>Pencadangan rutin melalui fitur <strong>Ekspor JSON</strong> serta keamanan file yang dibagikan adalah tanggung jawab Anda sepenuhnya. MZF Digital tidak bertanggung jawab atas kehilangan data akibat penghapusan aplikasi, kerusakan perangkat, pembaruan sistem, atau reset pabrik, dan tidak dapat memulihkan data yang hilang.</p>
+
+      <h2>7. Akurasi Perhitungan, Keamanan LPG &amp; Keselamatan Berkendara</h2>
+      <p>Semua angka konsumsi, biaya per km, estimasi jarak, dan pengingat batas aman LPG 80% hanyalah perkiraan informatif. Laporan PDF/CSV bukan dokumen pajak, akuntansi, atau bukti hukum resmi. Jangan pernah menggunakan Aplikasi saat mengemudi. MZF Digital tidak bertanggung jawab atas tilang, kecelakaan, kehabisan bahan bakar, atau kerusakan kendaraan.</p>
+
+      <h2>8. Keamanan Data, Retensi &amp; Hak Penghapusan</h2>
+      <p>Keamanan perangkat adalah tanggung jawab pengguna. Data lokal tetap berada di perangkat hingga Anda menghapusnya di dalam Aplikasi atau menghapus instalasi Aplikasi secara permanen.</p>
+
+      <h2>9. Transfer Data Internasional &amp; Hak Regional (KVKK / GDPR)</h2>
+      <p>MZF Digital tidak mengoperasikan server backend dan tidak melakukan transfer data pribadi lintas negara. Penyedia pihak ketiga (Google AdMob / Google Play) dapat memproses data teknis secara global sesuai ketentuan mereka.</p>
+
+      <h2>10. Privasi Anak-Anak</h2>
+      <p>TankFlow tidak ditujukan bagi anak di bawah 13 tahun (atau usia persetujuan digital setempat) dan tidak secara sadar mengumpulkan data anak-anak.</p>
+
+      <h2>11. Pembatasan Tanggung Jawab Maksimal &amp; Keadaan Kahar</h2>
+      <p>Aplikasi disediakan "sebagaimana adanya" tanpa jaminan apa pun. Sejauh diizinkan hukum yang berlaku, MZF Digital tidak bertanggung jawab atas kerugian langsung, tidak langsung, insidental, atau konsekuensial akibat penggunaan, gangguan, layanan pihak ketiga, akses tidak sah, kehilangan data, atau keadaan kahar (force majeure).</p>
+
+      <h2>12. Perubahan Kebijakan</h2>
+      <p>MZF Digital berhak memperbarui Kebijakan ini kapan saja tanpa pemberitahuan sebelumnya. Perubahan berlaku segera setelah dipublikasikan di halaman ini.</p>
+
+      <h2>13. Hukum yang Berlaku, Yurisdiksi &amp; Kontak</h2>
+      <p>Dengan tetap menghormati hak konsumen wajib setempat, Kebijakan ini diatur oleh hukum Republik Turki dengan yurisdiksi pengadilan di Ankara, Turki. Kontak: <a href="mailto:muzafferozdemir96@gmail.com">muzafferozdemir96@gmail.com</a></p>
+    </section>
+
+    <div class="footer">© 2026 MZF Digital — TankFlow (com.mzfdigital.tankflow)</div>
+  </div>
+
+  <script>
+    const supported = ['tr', 'en', 'de', 'fr', 'ru', 'ar', 'ur', 'id'];
+    const rtlLangs = ['ar', 'ur'];
+
+    function setLang(lang) {
+      if (!supported.includes(lang)) lang = 'en';
+      document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+
+      const target = document.getElementById('lang-' + lang);
+      const btn = document.querySelector('.lang-btn[data-lang="' + lang + '"]');
+      if (target) target.classList.add('active');
+      if (btn) btn.classList.add('active');
+
+      document.documentElement.lang = lang;
+      document.documentElement.dir = rtlLangs.includes(lang) ? 'rtl' : 'ltr';
+    }
+
+    (function init() {
+      const params = new URLSearchParams(window.location.search);
+      const urlLang = (params.get('lang') || '').toLowerCase().slice(0, 2);
+      const navLang = (navigator.language || 'tr').toLowerCase().slice(0, 2);
+      const initial = supported.includes(urlLang) ? urlLang : (supported.includes(navLang) ? navLang : 'tr');
+      setLang(initial);
+    })();
+  </script>
+</body>
+</html>
